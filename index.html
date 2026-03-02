@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Alana Wortsman | Advocacy</title>
+
+<style>
+body {
+  margin: 0;
+  background: black;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.caption {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 28px;
+  background: rgba(0,0,0,0.6);
+  padding: 18px 30px;
+  max-width: 850px;
+  text-align: center;
+  line-height: 1.4;
+}
+</style>
+</head>
+
+<body>
+
+<div class="slide active" style="background-image:url('IMG_5396.PNG')">
+  <div class="caption">
+    My advocacy began in conservation — protecting ecosystems and wildlife.
+  </div>
+</div>
+
+<div class="slide" style="background-image:url('IMG_5401.PNG')">
+  <div class="caption">
+    Caring for vulnerable animals showed me how deeply human choices shape their lives.
+  </div>
+</div>
+
+<div class="slide" style="background-image:url('IMG_5400.PNG')">
+  <div class="caption">
+    Compassion isn’t abstract. It’s daily action.
+  </div>
+</div>
+
+<div class="slide" style="background-image:url('IMG_5398.PNG')">
+  <div class="caption">
+    Then there was Dallas — a pit bull who changed everything.
+  </div>
+</div>
+
+<div class="slide" style="background-image:url('IMG_8085 (1).jpeg')">
+  <div class="caption">
+    Through him, I advocated against breed stigma — one conversation at a time.
+  </div>
+</div>
+
+<div class="slide" style="background-image:url('0DC2A60C-23B1-4337-A988-DE9315DC7458.JPG')">
+  <div class="caption">
+    Education over fear. Responsibility over stereotypes.
+  </div>
+</div>
+
+<div class="slide" style="background-image:url('IMG_5397.PNG')">
+  <div class="caption">
+    My advocacy extends to environmental stewardship and sustainability.
+  </div>
+</div>
+
+<div class="slide" style="background-image:url('IMG_9043.JPG')">
+  <div class="caption">
+    I have the experience.<br>
+    I have the education.<br><br>
+    <strong>But more importantly — I have the heart.</strong><br><br>
+    I’m ready to advocate at scale.
+  </div>
+</div>
+
+<script>
+let slides = document.querySelectorAll('.slide');
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove('active');
+  index = (index + 1) % slides.length;
+  slides[index].classList.add('active');
+}, 6000);
+</script>
+
+</body>
+</html>
